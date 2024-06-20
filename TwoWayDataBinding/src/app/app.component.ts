@@ -15,7 +15,14 @@ export class AppComponent {
   
   isTruthy(){
     //return {};
-    return [];
+    //return [];
+    //return true;
+    //return 1;
+    //return "teste";
+    return 'teste';
+    //return "0";
+    //return "false";
+    //return this.pessoa.status;
   }
 
 }
