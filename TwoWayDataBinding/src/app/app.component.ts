@@ -13,6 +13,10 @@ export class AppComponent {
     this.minhaProp = !this.minhaProp;
   }
   
+  isTruthy(){
+    //return {};
+    return [];
+  }
 
 }
 
