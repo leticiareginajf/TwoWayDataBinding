@@ -8,7 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   minhaProp = true;
-
+  pessoa = {
+    status: 1,
+    name: undefined
+  }
   toggleProp(){
     this.minhaProp = !this.minhaProp;
   }
@@ -19,10 +22,11 @@ export class AppComponent {
     //return true;
     //return 1;
     //return "teste";
-    return 'teste';
+    //return 'teste';
+    //return NaN;
     //return "0";
     //return "false";
-    //return this.pessoa.status;
+    return this.pessoa.status;
   }
 
 }
