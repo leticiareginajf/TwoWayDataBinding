@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   minhaProp = true;
-  pessoa = {
+  pessoa : any = {
     status: 1,
     name: undefined
   }
@@ -26,7 +26,8 @@ export class AppComponent {
     //return NaN;
     //return "0";
     //return "false";
-    return this.pessoa.status;
+    //return this.pessoa.status;
+    return this.pessoa.endereco?.rua;
   }
 
 }
