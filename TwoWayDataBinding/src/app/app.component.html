@@ -1,7 +1,6 @@
-<div style="background-color: green;" *ngIf="isTruthy()">Sou um div!</div>
+<!--<div style="background-color: green;" *ngIf="isTruthy()">Sou um div!</div>-->
 
-<button (click)="toggleProp()">Toggle</button>
-
+<div style="display: none;">Sou uma div escondida!</div>
 
 <!--    
 
@@ -13,5 +12,30 @@
 
 type="text" [ngModel]="name"  <-- Input
 (ngModelChange)="handleInputChange($event) <-- Output"
+
+
+
+<div style="background-color: green;" *ngIf="minhaProp; else meuTemplate">Sou um div!</div>
+
+<ng-template #meuTemplate>
+    <div style="background-color: red;">Sou uma outra div!</div>
+</ng-template>
+
+<button (click)="toggleProp()">Toggle</button>
+
+
+<ng-container *ngIf="minhaProp; then meuTemplate; else meuOutroTemplate"></ng-container>
+
+
+<ng-template #meuTemplate>
+    <div style="background-color: green;">Sou a div "then"!</div>
+</ng-template>
+
+<ng-template #meuOutroTemplate>
+    <div style="background-color: red;">Sou a div "else"!</div>
+</ng-template>
+
+<button (click)="toggleProp()">Toggle</button>
+
 
 -->
