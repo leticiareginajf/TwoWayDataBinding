@@ -1,9 +1,6 @@
-<!--<div style="background-color: green;" *ngIf="isTruthy()">Sou um div!</div>-->
-
-<div style="display: none;">Sou uma div escondida!</div>
-
-<!--    
-
+<!--<div style="background-color: green;" *ngIf="isTruthy()">Sou um div!</div>
+<div id="minha-div" style="display: none;">Sou uma div escondida!</div>
+<h1>TESSSTEEEE</h1>
 <h1>Nome:</h1>
 <input type="text" [(ngModel)]="name" (ngModelChange)="handleInputChange($event)" />
 
@@ -37,5 +34,27 @@ type="text" [ngModel]="name"  <-- Input
 
 <button (click)="toggleProp()">Toggle</button>
 
+<div id="minha-div" style="visibility: hidden;">Sou uma div escondida!</div>
 
+<h1>Sou um texto</h1>
 -->
+
+
+<div class="list">
+    <div class="item item--odd">
+        <p class="item__name">Felipe Freitas</p>
+        <p class="item__age">26 anos</p>
+    </div>
+    <div class="item item--highlighted">
+        <p class="item__name">Fulano da Silva</p>
+        <p class="item__age">34 anos</p>
+    </div>
+    <div class="item item--odd">
+        <p class="item__name">Jorginho Carvalho</p>
+        <p class="item__age">55 anos</p>
+    </div>
+    <div class="item">
+        <p class="item__name">Joazinho da Silva</p>
+        <p class="item__age">18 anos</p>
+    </div>
+</div>
