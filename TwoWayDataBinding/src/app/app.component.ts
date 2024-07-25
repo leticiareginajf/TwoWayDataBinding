@@ -7,7 +7,31 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  minhaProp = true;
+  listPeople = [
+    { name: 'Felipe Freitas', age: 26, },
+    { name: 'Fulano da Silva', age: 34, },
+    { name: 'Jorginho Carvalho', age: 35, },
+    { name: 'Joaozinho da Silva', age: 18, },  
+  ];
+  
+
+}
+
+
+/*
+
+listPessoas = ['Felipe', 'Joao', true, 1000, {nome: 'Fulano'}];
+name: string = 'Felipe';
+
+  handleInputChange( event: string){
+    console.log(event);
+
+    // ....
+
+    this.name = event.toUpperCase();
+  }
+
+minhaProp = true;
   pessoa : any = {
     status: 1,
     name: undefined
@@ -29,22 +53,5 @@ export class AppComponent {
     //return this.pessoa.status;
     return this.pessoa.endereco?.rua;
   }
-
-}
-
-
-/*
-
-name: string = 'Felipe';
-
-  handleInputChange( event: string){
-    console.log(event);
-
-    // ....
-
-    this.name = event.toUpperCase();
-  }
-
-
 
 */

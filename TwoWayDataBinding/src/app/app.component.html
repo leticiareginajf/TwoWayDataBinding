@@ -37,14 +37,12 @@ type="text" [ngModel]="name"  <-- Input
 <div id="minha-div" style="visibility: hidden;">Sou uma div escondida!</div>
 
 <h1>Sou um texto</h1>
--->
 
+<div *ngFor="let item of listPessoas">
+    {{ item }}
+</div>
 
-<div class="list">
-    <div class="item item--odd">
-        <p class="item__name">Felipe Freitas</p>
-        <p class="item__age">26 anos</p>
-    </div>
+ </div>
     <div class="item item--highlighted">
         <p class="item__name">Fulano da Silva</p>
         <p class="item__age">34 anos</p>
@@ -57,4 +55,14 @@ type="text" [ngModel]="name"  <-- Input
         <p class="item__name">Joazinho da Silva</p>
         <p class="item__age">18 anos</p>
     </div>
+-->
+
+
+<div class="list">
+    <div class="item" *ngFor="let person of listPeople">
+        <p class="item__name">{{ person.name }}</p>
+        <p class="item__age">{{ person.age }} anos</p>
+    </div>    
 </div>
+
+
