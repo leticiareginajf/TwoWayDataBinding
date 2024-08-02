@@ -13,6 +13,11 @@ export class AppComponent {
     { name: 'Jorginho Carvalho', age: 35, },
     { name: 'Joaozinho da Silva', age: 18, },  
   ];
+
+
+  selectPerson(index: number){
+    console.log(index);
+  }
   
 
 }
