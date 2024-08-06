@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
+  //personSelectedIndex: number = -0;
+  personSelectedIndex: number | undefined;
   listPeople = [
     { name: 'Felipe Freitas', age: 26, },
     { name: 'Fulano da Silva', age: 34, },
@@ -17,6 +18,8 @@ export class AppComponent {
 
   selectPerson(index: number){
     console.log(index);
+    
+    this.personSelectedIndex = index;
   }
   
 
