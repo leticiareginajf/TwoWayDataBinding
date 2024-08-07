@@ -1,0 +1,29 @@
+.item{
+    padding: 15px;
+    background-color: beige;
+    cursor: pointer;
+}
+
+.item__name{
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.item__age{
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.item--odd{
+ background-color: rgb(82,82,82);
+
+}
+
+.item--highlighted{
+    color: white;
+    background-color: rgb(60,229,54);
+    border: 3px solid rgb(168,249,131);
+   
+}
