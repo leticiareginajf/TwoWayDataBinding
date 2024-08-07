@@ -56,9 +56,10 @@ type="text" [ngModel]="name"  <-- Input
         <p class="item__age">18 anos</p>
     </div>
     <div class="list" *ngIf="true">
--->
-<div class="list">
-    <app-person 
+
+
+        APP - PERSON
+        <app-person 
     *ngFor="let person of listPeople; 
     let i = index;
     let isFirst = first;
@@ -74,6 +75,20 @@ type="text" [ngModel]="name"  <-- Input
     (personSelected)="selectPerson($event)"
     >
 </app-person>  
+
+<div class="list">
+    <h1>TEEEEESTE</h1>
 </div>
+-->
 
+<h1 [ngStyle]="{
+    'font-size': fontSize + 'px',
+    'color': textColor,
+}">Sou um H1 !!!!</h1>
 
+<h1 [style]="{
+    
+}">Sou um H1 !!!!</h1>
+
+<button (click)="increaseFontSize()">+A</button>
+<button (click)="toggleFontColor()">{{  buttonText  }}</button>

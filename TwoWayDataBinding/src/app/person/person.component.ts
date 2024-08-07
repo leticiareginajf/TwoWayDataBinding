@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class PersonComponent {
 
+  /*
   @Input({ required: true}) personName: string = '';
   @Input({ required: true}) personAge: number = 0;
   @Input({ required: true}) personIndex: number = 0;
@@ -23,6 +24,6 @@ export class PersonComponent {
   selectPerson(){
     this.onPersonSelectEmitt.emit(this.personIndex);
 
-  }
+  }*/
 
 }
