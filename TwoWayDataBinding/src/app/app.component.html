@@ -86,9 +86,10 @@ type="text" [ngModel]="name"  <-- Input
     'color': textColor,
 }">Sou um H1 !!!!</h1>
 
-<h1 [style]="{
-    
-}">Sou um H1 !!!!</h1>
+<h1 
+[style.style-size.px]="fontSize"
+[style.color]="textColor"
+>Sou um H2 !!!!</h1>
 
 <button (click)="increaseFontSize()">+A</button>
 <button (click)="toggleFontColor()">{{  buttonText  }}</button>
