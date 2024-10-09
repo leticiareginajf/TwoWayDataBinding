@@ -79,17 +79,30 @@ type="text" [ngModel]="name"  <-- Input
 <div class="list">
     <h1>TEEEEESTE</h1>
 </div>
--->
 
 <h1 [ngStyle]="{
     'font-size': fontSize + 'px',
     'color': textColor,
 }">Sou um H1 !!!!</h1>
 
+
 <h1 
 [style.style-size.px]="fontSize"
 [style.color]="textColor"
 >Sou um H2 !!!!</h1>
 
-<button (click)="increaseFontSize()">+A</button>
-<button (click)="toggleFontColor()">{{  buttonText  }}</button>
+<button (click)="setToGreen()"></button>
+<button (click)="setToOrange()">{{  buttonText  }}</button>
+<h1 [class.is-green]="{
+    'is-big is-green: isGreen,
+    'is-orange': isGreen,
+}">Sou um H1 !!!!</h1>
+
+
+
+
+<button (click)="setToGreen()">Verde</button>
+<button (click)="setToOrange()">Laranja</button>
+-->
+
+
