@@ -7,12 +7,51 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
+ 
+  pessoa = {
+    name: 'Felipe',
+    status: 1,
+    
+  }
+
+  pessoa2 = {
+    name: 'Mateus',
+    status: 2,
+    
+  }
+
+  pessoa3 = {
+    name: 'Luis',
+    status: 3,
+    
+  }
+
   
 
 }
 
 
 /*
+
+
+
+***PIPE****
+
+getStyle(status: number){
+
+    console.log('getStyle');
+
+    return {
+        'active': status === 1,
+        'partial': status === 2,
+        'blocked': status === 3,
+    }
+  }
+
+
+  *******
+
+ text = 'Felipe';
 
 listPessoas = ['Felipe', 'Joao', true, 1000, {nome: 'Fulano'}];
 name: string = 'Felipe';

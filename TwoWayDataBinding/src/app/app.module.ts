@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PersonComponent } from './person/person.component';
+import { StatusClassPipe } from './pipes/status-class.pipes';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonComponent
+    PersonComponent,
+    StatusClassPipe
   ],
   imports: [
     BrowserModule,
